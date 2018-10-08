@@ -26,6 +26,7 @@ setup(name='stockMarket',
           'sklearn',
           'matplotlib',
           'tushare',
+          'bs4'
       ],
       include_package_data=True,
       zip_safe=False,
