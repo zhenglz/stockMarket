@@ -19,7 +19,7 @@ setup(name='stockMarket',
       author='zhenglz',
       author_email='zhenglz@outlook.com',
       license='GPL-3.0',
-      packages=['datatools', ],
+      packages=['stockMarket', ],
       install_requires=[
           'numpy',
           'pandas',
