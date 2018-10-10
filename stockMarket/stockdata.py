@@ -76,3 +76,14 @@ class CollectData(object) :
         return NotImplementedError
 
 
+class ProcessDataSet(object):
+
+    def __init__(self):
+        pass
+
+    def mergedDataSet(self, df1, df2):
+        merged = pd.concat((df1, df2), axis=1, sort=False, copy=True)
+
+        merged = merged.dropna(axis='index')
+
+        return merged
