@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="043fdda3-1edb-493d-a20d-6fdf1b8a35d8" name="Default" comment="add pair pcc correlation">
-      <change beforePath="$PROJECT_DIR$/.idea/stockmarket.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/stockmarket.iml" afterDir="false" />
+    <list default="true" id="043fdda3-1edb-493d-a20d-6fdf1b8a35d8" name="Default" comment="updata data correlation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockMarket/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockMarket/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockMarket/stockanaly.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockMarket/stockanaly.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockMarket/stockdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockMarket/stockdata.py" afterDir="false" />
     </list>
     <ignored path="stockmarket.iws" />
@@ -52,15 +49,15 @@
         <counts>
           <entry key="Python Console" value="1124" />
           <entry key="md" value="573" />
-          <entry key="py" value="4980" />
-          <entry key="txt" value="183" />
+          <entry key="py" value="5477" />
+          <entry key="txt" value="196" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="573" />
-          <entry key="PLAIN_TEXT" value="183" />
-          <entry key="Python" value="6104" />
+          <entry key="PLAIN_TEXT" value="196" />
+          <entry key="Python" value="6601" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -95,13 +92,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stockMarket/stockdata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="161" column="21" lean-forward="true" selection-start-line="161" selection-start-column="21" selection-end-line="161" selection-end-column="21" />
+            <state relative-caret-position="152">
+              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
               <folding>
                 <element signature="e#23#32#0" expanded="true" />
-                <marker date="1539443044873" expanded="true" signature="3090:3169" ph="..." />
-                <marker date="1539443044873" expanded="true" signature="3680:3681" ph="..." />
-                <marker date="1539443044873" expanded="true" signature="3680:3686" ph="..." />
+                <marker date="1539444661876" expanded="true" signature="3543:3622" ph="..." />
+                <marker date="1539444661876" expanded="true" signature="4177:4178" ph="..." />
+                <marker date="1539444661876" expanded="true" signature="4177:4183" ph="..." />
               </folding>
             </state>
           </provider>
@@ -329,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539185536617</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updata data correlation">
+      <created>1539444299682</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1539444299682</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -342,7 +346,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-1" width="1362" height="641" extended-state="7" />
+    <frame x="-1" y="-1" width="1362" height="641" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1540763" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -380,7 +385,8 @@
     <MESSAGE value="rename a submodule, add gethistory function" />
     <MESSAGE value="start display and analysis submodules" />
     <MESSAGE value="add pair pcc correlation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add pair pcc correlation" />
+    <MESSAGE value="updata data correlation" />
+    <option name="LAST_COMMIT_MESSAGE" value="updata data correlation" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/.conda/envs/finance/lib/python2.7/site-packages/pandas/core/series.py" />
@@ -460,13 +466,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stockMarket/stockdata.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="161" column="21" lean-forward="true" selection-start-line="161" selection-start-column="21" selection-end-line="161" selection-end-column="21" />
+        <state relative-caret-position="152">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
           <folding>
             <element signature="e#23#32#0" expanded="true" />
-            <marker date="1539443044873" expanded="true" signature="3090:3169" ph="..." />
-            <marker date="1539443044873" expanded="true" signature="3680:3681" ph="..." />
-            <marker date="1539443044873" expanded="true" signature="3680:3686" ph="..." />
+            <marker date="1539444661876" expanded="true" signature="3543:3622" ph="..." />
+            <marker date="1539444661876" expanded="true" signature="4177:4178" ph="..." />
+            <marker date="1539444661876" expanded="true" signature="4177:4183" ph="..." />
           </folding>
         </state>
       </provider>

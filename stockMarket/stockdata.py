@@ -14,9 +14,20 @@ class CollectData(object):
 
     Parameters
     ----------
+    stock_loc: str,
+        the location of the stock market
 
     Attributes
     ----------
+    code_list: list,
+        a list of all codes for a given stock market
+    hist_data: pd.DataFrame,
+        the history data for a stock
+    PROJECT_ROOT: str,
+        the path of the project
+    DATA_ROOT: str,
+        the path holding the data files, such as the downloaded
+        stock history csv files
 
     """
 
@@ -63,6 +74,7 @@ class CollectData(object):
 
     def getHistoryKData(self, code, ktype="D", savefile=False):
         """
+        get history K-line data for a stock
 
         Parameters
         ----------
@@ -101,6 +113,7 @@ class CollectData(object):
 
     def loadHistFromCsv(self, csvfile):
         """
+        load dataset from a csv file
 
         Parameters
         ----------
@@ -119,6 +132,7 @@ class CollectData(object):
 
     def getTodayTicksData(self, code):
         """
+        get today's data given a stock code
 
         Parameters
         ----------
