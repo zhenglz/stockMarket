@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="043fdda3-1edb-493d-a20d-6fdf1b8a35d8" name="Default" comment="start display and analysis submodules">
+    <list default="true" id="043fdda3-1edb-493d-a20d-6fdf1b8a35d8" name="Default" comment="add pair pcc correlation">
+      <change beforePath="$PROJECT_DIR$/.idea/stockmarket.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/stockmarket.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockMarket/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockMarket/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockMarket/stockanaly.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockMarket/stockanaly.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockMarket/stockdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockMarket/stockdata.py" afterDir="false" />
     </list>
@@ -22,13 +23,15 @@
     <session id="1808247628">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -49,15 +52,15 @@
         <counts>
           <entry key="Python Console" value="1124" />
           <entry key="md" value="573" />
-          <entry key="py" value="3838" />
-          <entry key="txt" value="159" />
+          <entry key="py" value="4980" />
+          <entry key="txt" value="183" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="573" />
-          <entry key="PLAIN_TEXT" value="159" />
-          <entry key="Python" value="4962" />
+          <entry key="PLAIN_TEXT" value="183" />
+          <entry key="Python" value="6104" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -71,8 +74,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stockMarket/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+            <state relative-caret-position="51">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+              <folding>
+                <element signature="e#23#46#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,21 +86,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="339">
               <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stockMarket/stockdata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="83" column="36" lean-forward="true" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="36" />
+            <state relative-caret-position="407">
+              <caret line="161" column="21" lean-forward="true" selection-start-line="161" selection-start-column="21" selection-end-line="161" selection-end-column="21" />
               <folding>
                 <element signature="e#23#32#0" expanded="true" />
-                <marker date="1539185177041" expanded="true" signature="2721:2722" ph="..." />
-                <marker date="1539185177041" expanded="true" signature="2721:2727" ph="..." />
+                <marker date="1539443044873" expanded="true" signature="3090:3169" ph="..." />
+                <marker date="1539443044873" expanded="true" signature="3680:3681" ph="..." />
+                <marker date="1539443044873" expanded="true" signature="3680:3686" ph="..." />
               </folding>
             </state>
           </provider>
@@ -103,29 +110,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/historyStock.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2737">
+            <state relative-caret-position="390">
               <caret line="169" column="16" selection-start-line="169" selection-start-column="16" selection-end-line="169" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stockMarket/stockanaly.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="60" column="64" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
+            <state relative-caret-position="781">
+              <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
               <folding>
                 <element signature="e#23#42#0" expanded="true" />
-                <marker date="1539185414496" expanded="true" signature="163:164" ph="..." />
-                <marker date="1539185414496" expanded="true" signature="163:169" ph="..." />
-                <marker date="1539185414496" expanded="true" signature="315:324" ph="..." />
-                <marker date="1539185414496" expanded="true" signature="548:557" ph="..." />
-                <marker date="1539185414496" expanded="true" signature="701:710" ph="..." />
-                <marker date="1539185414496" expanded="true" signature="875:1958" ph="..." />
-                <marker date="1539185414496" expanded="true" signature="1986:1991" ph="..." />
-                <marker date="1539185414496" expanded="true" signature="2015:2044" ph="..." />
-                <marker date="1539185414496" expanded="true" signature="2064:2073" ph="..." />
-                <marker date="1539185414496" expanded="true" signature="2169:2178" ph="..." />
+                <marker date="1539441630102" expanded="true" signature="163:164" ph="..." />
+                <marker date="1539441630102" expanded="true" signature="163:169" ph="..." />
+                <marker date="1539441630102" expanded="true" signature="236:309" ph="..." />
+                <marker date="1539441630102" expanded="true" signature="374:383" ph="..." />
+                <marker date="1539441630102" expanded="true" signature="652:661" ph="..." />
+                <marker date="1539441630102" expanded="true" signature="805:814" ph="..." />
+                <marker date="1539441630102" expanded="true" signature="979:2498" ph="..." />
+                <marker date="1539441630102" expanded="true" signature="2526:2531" ph="..." />
+                <marker date="1539441630102" expanded="true" signature="2555:2584" ph="..." />
+                <marker date="1539441630102" expanded="true" signature="2604:2613" ph="..." />
+                <marker date="1539441630102" expanded="true" signature="2709:2718" ph="..." />
               </folding>
             </state>
           </provider>
@@ -165,10 +173,10 @@
         <option value="$PROJECT_DIR$/setting.py" />
         <option value="$PROJECT_DIR$/datatools/__init__.py" />
         <option value="$PROJECT_DIR$/datatools/stockdata.py" />
-        <option value="$PROJECT_DIR$/stockMarket/__init__.py" />
         <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$PROJECT_DIR$/stockMarket/stockdata.py" />
+        <option value="$PROJECT_DIR$/stockMarket/__init__.py" />
         <option value="$PROJECT_DIR$/stockMarket/stockanaly.py" />
+        <option value="$PROJECT_DIR$/stockMarket/stockdata.py" />
       </list>
     </option>
   </component>
@@ -182,6 +190,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,18 +206,22 @@
             <path>
               <item name="stockMarket" type="b2602c69:ProjectViewProjectNode" />
               <item name="stockMarket" type="462c0819:PsiDirectoryNode" />
+              <item name="notebooks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stockMarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stockMarket" type="462c0819:PsiDirectoryNode" />
               <item name="stockMarket" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -309,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539099640615</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add pair pcc correlation">
+      <created>1539185536617</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1539185536617</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -322,8 +342,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-1" width="1362" height="641" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="-1" width="1362" height="641" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1540763" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -335,8 +354,8 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32876712" />
-      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.8608826" visible="true" weight="0.2661448" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.06849315" />
+      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.8608826" weight="0.2661448" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.13911742" side_tool="true" weight="0.26705652" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -360,7 +379,8 @@
     <MESSAGE value="list all stock codes" />
     <MESSAGE value="rename a submodule, add gethistory function" />
     <MESSAGE value="start display and analysis submodules" />
-    <option name="LAST_COMMIT_MESSAGE" value="start display and analysis submodules" />
+    <MESSAGE value="add pair pcc correlation" />
+    <option name="LAST_COMMIT_MESSAGE" value="add pair pcc correlation" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/.conda/envs/finance/lib/python2.7/site-packages/pandas/core/series.py" />
@@ -383,20 +403,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/datatools/stockdata.py" />
     <entry file="file://$PROJECT_DIR$/datatools/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/stockMarket/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/historyStock.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2737">
-          <caret line="169" column="16" selection-start-line="169" selection-start-column="16" selection-end-line="169" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/sha_stock_list_all.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34221">
@@ -409,39 +415,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="339">
           <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stockMarket/stockdata.py">
+    <entry file="file://$PROJECT_DIR$/stockMarket/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="83" column="36" lean-forward="true" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="36" />
+        <state relative-caret-position="51">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
           <folding>
-            <element signature="e#23#32#0" expanded="true" />
-            <marker date="1539185177041" expanded="true" signature="2721:2722" ph="..." />
-            <marker date="1539185177041" expanded="true" signature="2721:2727" ph="..." />
+            <element signature="e#23#46#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/historyStock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="169" column="16" selection-start-line="169" selection-start-column="16" selection-end-line="169" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stockMarket/stockanaly.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="60" column="64" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
+        <state relative-caret-position="781">
+          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
           <folding>
             <element signature="e#23#42#0" expanded="true" />
-            <marker date="1539185414496" expanded="true" signature="163:164" ph="..." />
-            <marker date="1539185414496" expanded="true" signature="163:169" ph="..." />
-            <marker date="1539185414496" expanded="true" signature="315:324" ph="..." />
-            <marker date="1539185414496" expanded="true" signature="548:557" ph="..." />
-            <marker date="1539185414496" expanded="true" signature="701:710" ph="..." />
-            <marker date="1539185414496" expanded="true" signature="875:1958" ph="..." />
-            <marker date="1539185414496" expanded="true" signature="1986:1991" ph="..." />
-            <marker date="1539185414496" expanded="true" signature="2015:2044" ph="..." />
-            <marker date="1539185414496" expanded="true" signature="2064:2073" ph="..." />
-            <marker date="1539185414496" expanded="true" signature="2169:2178" ph="..." />
+            <marker date="1539441630102" expanded="true" signature="163:164" ph="..." />
+            <marker date="1539441630102" expanded="true" signature="163:169" ph="..." />
+            <marker date="1539441630102" expanded="true" signature="236:309" ph="..." />
+            <marker date="1539441630102" expanded="true" signature="374:383" ph="..." />
+            <marker date="1539441630102" expanded="true" signature="652:661" ph="..." />
+            <marker date="1539441630102" expanded="true" signature="805:814" ph="..." />
+            <marker date="1539441630102" expanded="true" signature="979:2498" ph="..." />
+            <marker date="1539441630102" expanded="true" signature="2526:2531" ph="..." />
+            <marker date="1539441630102" expanded="true" signature="2555:2584" ph="..." />
+            <marker date="1539441630102" expanded="true" signature="2604:2613" ph="..." />
+            <marker date="1539441630102" expanded="true" signature="2709:2718" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stockMarket/stockdata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="161" column="21" lean-forward="true" selection-start-line="161" selection-start-column="21" selection-end-line="161" selection-end-column="21" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+            <marker date="1539443044873" expanded="true" signature="3090:3169" ph="..." />
+            <marker date="1539443044873" expanded="true" signature="3680:3681" ph="..." />
+            <marker date="1539443044873" expanded="true" signature="3680:3686" ph="..." />
           </folding>
         </state>
       </provider>

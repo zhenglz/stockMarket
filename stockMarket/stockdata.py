@@ -1,12 +1,24 @@
 #!/usr/bin/env python
 
 import os
+import urllib2
 import pandas as pd
 from bs4 import BeautifulSoup
 import subprocess as sp
 import tushare as ts
 
-class CollectData(object) :
+
+class CollectData(object):
+    """
+    Collect stock data from internet
+
+    Parameters
+    ----------
+
+    Attributes
+    ----------
+
+    """
 
     def __init__(self, location='sha'):
 
@@ -19,17 +31,22 @@ class CollectData(object) :
         self.code_list = None
         self.hist_data = None
 
+        self.PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+        self.DATA_ROOT = os.path.join(self.PROJECT_ROOT, '../data/')
+
     def stock_list(self):
         """
         get a list of stock code given the market
-        :return: pd.DataFrame, information of all stock codes, as well as their names
+
+        Returns
+        stock_list: pd.DataFrame,
+            information of all stock codes, as well as their names
+        -------
+
         """
         #TODO: process sha stock ids and information with bs4
 
-        PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
-        DEFINITIONS_ROOT = os.path.join(PROJECT_ROOT, '../data/')
-
-        html = DEFINITIONS_ROOT + self.stock_loc + "_stock_list_all.html"
+        html = self.DATA_ROOT + self.stock_loc + "_stock_list_all.html"
 
         text = sp.check_output("cat %s "%html, shell=True)
         soup = BeautifulSoup(text, "html.parser")
@@ -44,36 +61,81 @@ class CollectData(object) :
         self.code_list = stock_list['code']
         return stock_list
 
-    def getHistoryKData(self, code, ktype="D", savefile=""):
-        """
-        obtain history K-line data
-        :param code: str, the stock code, such sha, 600003
-        :param ktype: str, k-line data frequency, W for week, D for data, 30 for 30 mins
-                           details could be found here http://tushare.org/trading.html#id2
-        :param savefile: str, save the data to a file
-        :return: pd.DataFrame, the stock history K-line data
+    def getHistoryKData(self, code, ktype="D", savefile=False):
         """
 
-        if len(savefile) == 0 :
-            savefile = code + "_hist_data.csv"
+        Parameters
+        ----------
+        code: str,
+            the stock code, such sha, 600003
+        ktype: str, default is D, by day
+            k-line data frequency, W for week, D for data, 30 for 30 mins
+            details could be found here http://tushare.org/trading.html#id2
+        savefile: bool, default is False
+            whether save the data to a file
+
+        Returns
+        -------
+        hist: pd.DataFrame,
+            the history data of a stock
+
+        """
+
+        savefile_name = ""
+        if savefile:
+            savefile_name = self.DATA_ROOT + code + "_hist_data.csv"
 
         hist = None
 
-        try :
+        try:
             # download data using tushare
             hist = ts.get_hist_data(code, pause=3.1415, retry_count=5, ktype=ktype)
-            hist.to_csv(savefile, sep=",", header=True, index=True)
+            if savefile_name :
+                hist.to_csv(savefile_name, sep=",", header=True, index=True)
+
             self.hist_data = hist
-        except :
-            print('Download data %s failed, please try again later.'%code)
+        except urllib2.HTTPError:
+            print('Download data %s failed, please try again later.' % code)
 
         return hist
 
+    def loadHistFromCsv(self, csvfile):
+        """
+
+        Parameters
+        ----------
+        csvfile: str,
+            the file name of a csv file
+
+        Returns
+        -------
+        df: pd.DataFrame
+            history data of a stock
+        """
+
+        df = pd.read_csv(csvfile, sep=",", header=0)
+
+        return df
+
     def getTodayTicksData(self, code):
+        """
+
+        Parameters
+        ----------
+        code: str,
+            the code of a stock
+
+        Returns
+        -------
+        df: pd.DataFrame,
+            the dat of today for stock code
+        """
         #TODO: reuse the tushare get_today_ticks
-        print("http://tushare.org/trading.html#id4")
-        print("Usage: tushare.get_today_ticks(code, date)")
-        return NotImplementedError
+        #print("http://tushare.org/trading.html#id4")
+        #print("Usage: tushare.get_today_ticks(code)")
+        df = ts.get_today_ticks(code, pause=1.414)
+
+        return df
 
 
 class ProcessDataSet(object):
@@ -82,6 +144,18 @@ class ProcessDataSet(object):
         pass
 
     def mergedDataSet(self, df1, df2):
+        """
+        merge two history dataset by their index (dat)
+
+        Parameters
+        ----------
+        df1: pd.DataFrame
+        df2: pd.DataFrame
+
+        Returns
+        -------
+        merged: pd.DataFrame
+        """
         merged = pd.concat((df1, df2), axis=1, sort=False, copy=True)
 
         merged = merged.dropna(axis='index')
